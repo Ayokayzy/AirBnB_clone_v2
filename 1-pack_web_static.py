@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+1-pack_web_static.py
+"""
 from fabric import Connection, task
 from datetime import datetime
 import os
