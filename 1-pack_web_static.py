@@ -7,10 +7,9 @@ from datetime import datetime
 import os
 
 
-@task
 def do_pack():
-    """a Fabric script that generates a .tgz archive
-    from the contents of the web_static folder"""
+    """a Fabric script that generates a .tgz archive \
+from the contents of the web_static folder"""
 
     FORMAT = '%Y%m%d%H%M%S'
     TIME = datetime.now().strftime(FORMAT)
