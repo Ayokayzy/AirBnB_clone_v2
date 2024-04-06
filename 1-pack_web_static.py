@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 from fabric import Connection, task
 from datetime import datetime
 import os
