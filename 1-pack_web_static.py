@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/python3
 from fabric import Connection, task
 from datetime import datetime
 import os
