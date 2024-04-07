@@ -1,1 +1,4 @@
 file.json
+.venv/
+.venv/*
+.venv
