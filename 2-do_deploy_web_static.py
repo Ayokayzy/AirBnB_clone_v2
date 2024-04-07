@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from fabric.api import local, get, env
+from fabric.api import *
 from time import strftime
 from datetime import date
 from os import path
@@ -30,7 +30,7 @@ def do_deploy(archive_path):
 /data/web_static/releases/web_static_{timestamp}/")
         # remove extraneous web_static dir
         run('sudo rm -rf /data/web_static/releases/\
-web_static_{timestamp}/web_static'
+web_static_{timestamp}/wieb_static')
         run(f"sudo rm -fr /data/web_static/current")
         run(f"sudo ln -s -f /data/web_static/releases/web_static_{timestamp} \
 /data/web_static/current")
