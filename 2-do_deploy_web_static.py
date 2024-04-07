@@ -31,6 +31,8 @@ web_static_{timestamp}/web_static")
         run(f"sudo rm -fr /data/web_static/current")
         run(f"sudo ln -s -f /data/web_static/releases/web_static_{timestamp}/ \
 /data/web_static/current")
-        return True
     except Exception:
         return False
+
+
+    return True
