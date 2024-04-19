@@ -9,25 +9,26 @@ app = Flask(__name__)
 
 @app.route("/", strict_slashes=False)
 def home():
-    """Home Route"""
+    """Returns page"""
     return "Hello HBNB!"
 
 
 @app.route("/hbnb", strict_slashes=False)
 def hbnb():
-    """Returns HBNB page"""
+    """Returns page"""
     return "HBNB"
 
 
 @app.route("/c/<text>", strict_slashes=False)
 def c(text):
-    """Returns HBNB page"""
+    """Returns page"""
     return "C {}".format(text.replace("_", " "))
 
 
+@app.route('/python', strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
-def python(text):
-    """Returns HBNB page"""
+def python(text="is cool"):
+    """Returns page"""
     return "Python {}".format(text.replace("_", " "))
 
 
