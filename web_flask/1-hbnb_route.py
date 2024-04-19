@@ -12,6 +12,11 @@ def home():
     """Home Route"""
     return "Hello HBNB!"
 
+@app.route("", strict_slashes-False)
+def hbnb():
+    """Returns HBNB page"""
+    return "HBNB"
+
 
 if __name__ == "__main__":
     print("Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)")
