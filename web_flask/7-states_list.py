@@ -14,7 +14,6 @@ app = Flask(__name__)
 def state_list():
     states = storage.all(State)
     all_state = {state.id: state.name for state in states.values()}
-    print(all_state);
     return render_template("7-states_list.html", states=all_state)
 
 
