@@ -23,7 +23,8 @@ def state_list():
 
 # Define a function to handle teardown
 @app.teardown_appcontext
-def teardown_appcontext(exception):
+def teardown_appcontext():
+    """close session context"""
     storage.close()
 
 
