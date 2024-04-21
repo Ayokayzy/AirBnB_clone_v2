@@ -14,7 +14,7 @@ class State(BaseModel, Base):
 
     @property
     def cities(self):
-        from model.filestorage import storage
+        from models import storage
         from models.city import City
         return [city for city in storage.all(City).values()
                 if city.state_id == self.id]
